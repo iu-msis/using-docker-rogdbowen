@@ -49,9 +49,11 @@
   <center><a id="Here" href="https://www.rd.com/wp-content/uploads/2017/11/How-Much-Does-a-Book-Need-to-Sell-to-Be-a-Bestseller-509582812-Billion-Photos-1024x683.jpg"> source: rd.com </a></center>
   <br>
 <div class="container Table1">
-<table>
+<table id="gorillaTable">
+  <thead>
   <!--Table style from htmldog.com-->
-  			<th>Title</th>
+			<tr>
+        <th scope= "col">Yes</th>
         <th>Author</th>
         <th>Year</th>
         <th>Publisher</th>
@@ -59,6 +61,8 @@
         <th>MSRP</th>
 
   		</tr>
+    </thead>
+    <tbody>
   		<tr>
   			<td>Running Water</td>
   			<td>Roger Bowen</td>
@@ -103,6 +107,7 @@
         <th>20</th>
         <th>$5</th>
       </tr>
+    </tbody>
   	</table>
   </div>
 
@@ -185,5 +190,12 @@
 
 
 <p></p>
+<!-- Tabesort plugin from http://tristen.ca/tablesort/demo/ -->
+<script src="js/tablesort.min.js"></script>
+
+<script>
+  new Tablesort(document.getElementById('gorillaTable'));
+</script>
+
 </body>
 </html>
