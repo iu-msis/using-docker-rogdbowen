@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+  <!--Compiled and minified CSS-->
+    <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+  <title>My Page Title</title>
+
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<meta charset="utf-8">
+	<title>Automatic table layout</title>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Profiles.html">Profiles</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Books.html">Book Information</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+<br>
+
+<div class="container Header1">
+<center><h1>Books Man</h1>
+</div>
+
+<!--Google image-->
+<a href="https://www.rd.com/wp-content/uploads/2017/11/How-Much-Does-a-Book-Need-to-Sell-to-Be-a-Bestseller-509582812-Billion-Photos-1024x683.jpg"> <img src="https://www.rd.com/wp-content/uploads/2017/11/How-Much-Does-a-Book-Need-to-Sell-to-Be-a-Bestseller-509582812-Billion-Photos-1024x683.jpg"><a/>
+  <br>
+  <center><a id="Here" href="https://www.rd.com/wp-content/uploads/2017/11/How-Much-Does-a-Book-Need-to-Sell-to-Be-a-Bestseller-509582812-Billion-Photos-1024x683.jpg"> source: rd.com </a></center>
+  <br>
+<div class="container Table1">
+<table id="gorillaTable">
+  <thead>
+  <!--Table style from htmldog.com-->
+			<tr>
+        <th scope= "col">Yes</th>
+        <th>Author</th>
+        <th>Year</th>
+        <th>Publisher</th>
+        <th>Page #</th>
+        <th>MSRP</th>
+
+  		</tr>
+    </thead>
+    <tbody>
+  		<tr>
+  			<td>Running Water</td>
+  			<td>Roger Bowen</td>
+	      <td>1987</td>
+        <td>Dreamworks Mom</td>
+        <th>101</th>
+        <th>$1000</th>
+
+      </tr>
+  		<tr>
+        <td>Facing Fun</td>
+  			<td>Derek Brunson</td>
+	      <td>1962</td>
+        <td>Dad</td>
+        <th>431</th>
+        <th>$10</th>
+
+  		</tr>
+  		<tr>
+        <td>Lone Survivor</td>
+  			<td>Marcus Luttrell</td>
+	      <td>2005</td>
+        <td>Navy Seals</td>
+        <th>502</th>
+        <th>$23</th>
+
+  		</tr>
+      <tr>
+        <td>Happy Stuff</td>
+  			<td>Deal Man</td>
+	      <td>1923</td>
+        <td>Stopper</td>
+        <th>311</th>
+        <th>$12</th>
+  		</tr>
+
+      <tr>
+        <td>Darkness</td>
+        <td>Jorge Gregory</td>
+        <td>1823</td>
+        <td>Publisher0</td>
+        <th>20</th>
+        <th>$5</th>
+      </tr>
+    </tbody>
+  	</table>
+  </div>
+
+    <form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <br>
+      <br>
+      <label for="validationCustom01">Title</label>
+      <input type="Text" class="form-control" id="validationCustom01" placeholder="Book title" value="" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom02">Author</label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Author name" value="" required>
+      <div class="valid-feedback">
+        Valid!
+      </div>
+    </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom03">Year</label>
+      <input type="text" class="form-control" id="validationCustom03" placeholder="Year published" required>
+      <div class="invalid-feedback">
+        Please provide a valid year.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom04">Publisher</label>
+      <input type="text" class="form-control" id="validationCustom04" placeholder="Publisher name" required>
+      <div class="invalid-feedback">
+        Please provide a valid publisher name.
+      </div>
+    </div>
+      <label for="validationCustom04">Page #</label>
+      <input type="text" class="form-control" id="validationCustom04" placeholder="Number of pages" required>
+      <div class="invalid-feedback">
+        Please provide a valid page number.
+      </div>
+    </div>
+      <label for="validationCustom04">MSRP</label>
+      <input type="text" class="form-control" id="validationCustom04" placeholder="Book price" required>
+      <div class="invalid-feedback">
+        Please provide a valid amount.
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+
+<p></p>
+<!-- Tabesort plugin from http://tristen.ca/tablesort/demo/ -->
+<script src="js/tablesort.min.js"></script>
+
+<script>
+  new Tablesort(document.getElementById('gorillaTable'));
+</script>
+
+</body>
+</html>
