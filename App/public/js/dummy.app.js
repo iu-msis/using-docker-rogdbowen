@@ -1,7 +1,9 @@
 var waitingApp = new Vue({
   el: '#patientWaitingApp',
   data: {
-    patients:{ }
+    patients:{
+
+     }
   },
 
   methods:{

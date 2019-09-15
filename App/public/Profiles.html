@@ -42,10 +42,11 @@
 <div class="container Header1">
 <center> <h1>Informations</h1>
 </div>
-<td><img src=https://assets3.thrillist.com/v1/image/2782161/size/tmg-article_tall;jpeg_quality=20.jpg></td>
+<center><td><img src=https://assets3.thrillist.com/v1/image/2782161/size/tmg-article_tall;jpeg_quality=20.jpg></td></center>
 <br>
 <center><a id="Here" href="https://assets3.thrillist.com/v1/image/2782161/size/tmg-article_tall;jpeg_quality=20.jpg" alt="Gorilla"> source: asset3.com </a></center>
 <br>
+<div id='patientWaitingApp'
 
 <center><table>
   <!--Table style from htmldog.com-->
@@ -57,31 +58,32 @@
   		</tr>
   		<tr>
   			<td>Name</td>
-  			<td>Roger Bowen</td>
+  			<td>{{ patients.name.first }} {{ patients.name.last }}</td>
 
   		</tr>
   		<tr>
   			<td>Country</td>
-  			<td>USA</td>
+  			<td>{{ patients.nat }}</td>
 
   		</tr>
   		<tr>
   			<td>Birthdate</td>
-  			<td>August 22nd</td>
+  			<td>{{ patients.dob.date }}d</td>
 
   		</tr>
   		<tr>
   			<td>Age</td>
-  			<td>60</td>
+  			<td>{{ patients.dob.age }}</td>
 
   		</tr>
   		<tr>
   			<td>Email</td>
         <!--In class instructions helped with this email link-->
-  			<td><a href="mailto:rdbowen@iu.edu">rdbowen@iu.edu</a></td>
+  			<td><a v-bind:href="`mailto:${patients.email}`">{{ patients.email }}</a></td>
 
   		</tr>
 
+</div>
 
   	</table>
 <br>
@@ -91,5 +93,7 @@
 </div>
 <p></p>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/dummy.app.js"></script>
 </body>
 </html>
