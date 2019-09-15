@@ -1,3 +1,5 @@
+//In class instructions helped with this code
+
 var waitingApp = new Vue({
   el: '#patientWaitingApp',
   data: {
@@ -5,7 +7,7 @@ var waitingApp = new Vue({
 
      }
   },
-
+//Using RandomUser.me website
   methods:{
     fetchPatients() {
       fetch('https://randomuser.me/api/')
